@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.MainController">
+   <children>
+      <Button fx:id="pressMeButton1" layoutX="240.0" layoutY="125.0" mnemonicParsing="false" onAction="#press" prefHeight="50.0" prefWidth="121.0" text="Press me" textFill="#0535f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="pressMeButton2" layoutX="240.0" layoutY="75.0" mnemonicParsing="false" onAction="#press" prefHeight="50.0" prefWidth="121.0" text="Press me" textFill="#0535f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="pressMeButton3" layoutX="240.0" layoutY="175.0" mnemonicParsing="false" onAction="#press" prefHeight="50.0" prefWidth="121.0" text="Press me" textFill="#0535f8">
+      <font>
+         <Font size="20.0" />
+      </font>
+      </Button>
+      <TextField fx:id="text" layoutX="226.0" layoutY="238.0" promptText="Enter name" />
+   </children>
+</AnchorPane>
