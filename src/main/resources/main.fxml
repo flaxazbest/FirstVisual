@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.MainController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logic.MainController">
    <children>
-      <Button fx:id="pressMeButton1" layoutX="240.0" layoutY="125.0" mnemonicParsing="false" onAction="#press" prefHeight="50.0" prefWidth="121.0" text="Press me" textFill="#0535f8">
+      <Button fx:id="pressMeButton1" layoutX="240.0" layoutY="75.0" mnemonicParsing="false" onAction="#press" prefHeight="50.0" prefWidth="121.0" text="Press me" textFill="#0535f8">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="pressMeButton2" layoutX="240.0" layoutY="75.0" mnemonicParsing="false" onAction="#press" prefHeight="50.0" prefWidth="121.0" text="Press me" textFill="#0535f8">
+      <Button fx:id="pressMeButton2" layoutX="240.0" layoutY="125.0" mnemonicParsing="false" onAction="#press" prefHeight="50.0" prefWidth="121.0" text="Press me" textFill="#0535f8">
          <font>
             <Font size="20.0" />
          </font>
@@ -24,6 +29,16 @@
          <Font size="20.0" />
       </font>
       </Button>
-      <TextField fx:id="text" layoutX="226.0" layoutY="238.0" promptText="Enter name" />
+      <TextField fx:id="text" layoutX="242.0" layoutY="239.0" prefHeight="25.0" prefWidth="121.0" promptText="Enter name" />
+      <CheckBox fx:id="checkBox" layoutX="242.0" layoutY="274.0" mnemonicParsing="false" onAction="#check" prefHeight="17.0" prefWidth="149.0" text="CheckBox" />
+      <Label fx:id="label" layoutX="226.0" layoutY="230.0" text="Name" visible="false" />
+      <RadioButton fx:id="radio1" layoutX="387.0" layoutY="92.0" mnemonicParsing="false" onAction="#activate1" text="Radio1" />
+      <RadioButton fx:id="radio2" layoutX="387.0" layoutY="142.0" mnemonicParsing="false" onAction="#activate2" text="Radio2" />
+      <RadioButton fx:id="radio3" layoutX="387.0" layoutY="192.0" mnemonicParsing="false" onAction="#activate3" text="Radio3" />
+      <ChoiceBox fx:id="choiseBox" layoutX="226.0" layoutY="42.0" onAction="#choise" prefWidth="150.0" />
+      <ComboBox fx:id="comboBox" layoutX="62.0" layoutY="42.0" onAction="#combo" prefHeight="56.0" prefWidth="150.0" />
+      <ListView fx:id="listView" onMouseClicked="#selectMaybe" layoutX="57.0" layoutY="119.0" prefHeight="196.0" prefWidth="160.0" />
+      <Button fx:id="button" layoutX="57.0" layoutY="315.0" mnemonicParsing="false" onAction="#printAll" prefHeight="4.0" prefWidth="160.0" text="---" />
+      <ProgressBar fx:id="progress" layoutX="62.0" layoutY="355.0" prefWidth="200.0" progress="0.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
    </children>
 </AnchorPane>
